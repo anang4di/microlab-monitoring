@@ -2,12 +2,10 @@ services:
   prometheus:
     image: bitnami/prometheus:latest
     container_name: prometheus
-    restart: unless-stopped
+    user: "1000:1000"
+    restart: no
     ports:
       - "9090:9090"
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
-      - prometheus_data:/prometheus
-
-volumes:
-  prometheus_data:
+      - ./prometheus/data:/opt/bitnami/prometheus/data
