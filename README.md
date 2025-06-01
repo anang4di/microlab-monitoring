@@ -3,7 +3,7 @@
 
 Sistem pemantauan berbasis Prometheus dan Grafana sederhana, dirancang untuk memberikan visibilitas real-time terhadap parameter lingkungan dan performa server.
 
-## Feaures
+## Features
 
 - **Integrasi Prometheus**: Mengumpulkan metrik dari berbagai sumber (ex: node exporter).
 - **Visualisasi dengan Grafana**: Dashboard untuk memantau data secara real-time.
